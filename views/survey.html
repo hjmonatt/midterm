@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+</head>
+<body>
+<div class="container">
+<h1>Midterm Survey</h1>
+<form action="summary" method="post">
+    <label for="name">Name: </label>
+    <input type="text" id="name" name="name"><br><br>
+
+    <label class="col-sm-2 control-label">Check all that apply:</label>
+    <br><br>
+    <div class="col-sm-4">
+        <label><input type="checkbox"
+                      name="survey[]"
+                      value="This midterm is easy"> This midterm is easy</label><br>
+        <label><input type="checkbox"
+                      name="survey[]"
+                      value="I like midterms"> I like midterms</label><br>
+        <label><input type="checkbox"
+                      name="survey[]"
+                      value="Today is Monday"> Today is Monday</label><br>
+    </div>
+    <br><br>
+    <input type="submit" value="Submit">
+</form>
+</div>
+</body>
+</html>
